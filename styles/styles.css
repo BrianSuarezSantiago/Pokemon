@@ -1,0 +1,82 @@
+body {
+    background-color: #041562;
+}
+
+
+#game-title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 72px;
+}
+
+
+#pet-heading {
+    color: white;
+    font-size: 32px;
+}
+
+
+#select-pet {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pets-cards {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;	/* margin en flexbox*/
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #11468f;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* para estilizar las imagenes sin tener que poner una clase, hacemos: */
+.card img {
+    /*lo de arriba se lee como selector de clase y selector de tipo, es decir,
+	queremos que la imagen de esa clase tenga unos estilos que vamos a especificar
+	
+	imagen dentro de la clase tarjeta-de-mokepon*/
+    width: 100px;
+}
+
+
+input {
+    /*Evita que el input radio se vea y se seleccione solo desde el card*/
+    display: none;
+}
+
+/*
+TODO: https://mastery.games/flexboxzombies/
+TODO: https://juliansci.github.io/css-flexbox-simulator/
+TODO: https://flexboxfroggy.com/#es
+FIXME: https://lenguajehtml.com/html/
+TODO: https://uniwebsidad.com/libros/css/capitulo-4
+TODO: https://drafts.csswg.org/css-box-3/
+TODO: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+TODO: https://fullstackopen.com/en/
+*/

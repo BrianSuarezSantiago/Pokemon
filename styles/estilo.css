@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+
+	font-family: 'Press Start 2P', cursive;
+	--White:  rgba(228,238,249,.5);
+	--border-blur: solid 4pxrgba(255,255,255,.5);
+	--box-shadow: 020px30px4pxrgba(0,0,0,.2);
+	--text: #F1EDED;
+
+}
+
+body {
+
+	background-image: url(images/game.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+
+
+.tittle {
+
+	color: var(--text);
+	font-size: 4rem;
+	
+}
+
+
+h2 {
+	color: var(--text);
+	font-size: 2.2rem;
+	padding: 1rem;
+}
+
+
+
+
+
+.container-mascotas {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	gap: 2rem;
+	
+	
+	
+
+}
+
+.imgPet {
+	background-color: var(--White);
+	backdrop-filter: blur(70px);
+	border: var(--border-blur);
+	box-shadow: var(--box-shadow);
+	border-radius: 15px;
+
+	
+}
+
+
+
+.label {
+
+	font-size: 1.3rem;
+	color: #506378;
+
+}
+
+
+.input {
+	
+	display: none;
+}
+
+
+.input:checked + .label {
+		width: 20vw;
+		height: 20vh;
+		border-radius: 50%;
+		background-color: rgba(82,149,182,.5);
+		color: #FBFEFF;
+}
+
+
+.button {
+	background-color: var(--White);
+	backdrop-filter: blur(70px);
+	border: var(--border-blur);
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+	padding: .7rem10rem;
+	margin-top: 3rem;
+	color: #506378;
+	cursor: pointer;
+}
+
+
+
+/* - - ATAQUE - - */
+
+
+.ataq {
+	padding: 1.7rem4rem;
+	font-size: 1.7rem;
+	border: none;
+}
+
+
+
+
+#mensajeFinal {
+		background-color: rgba(228,238,249,.2);
+		font-size: 2rem;
+		color: #0C6090;
+		padding: 1.4rem;
+
+		width: 50%;
+		margin: 25px auto;
+		border-radius: 15px;
+		
+}
+
+
+#button-restart {
+
+	padding: 1rem4rem;
+	font-size: 1rem;
+	background-color: #E59B23;
+	color: white;
+	border-radius: 20px;
+
+}
+
+
+
+.container-vidas {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+	padding: 2rem;
+}
+
+
+.tarjetavida {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: rgba(250,253,235,.8);
+	backdrop-filter: blur(70px);
+	border: var(--border-blur);
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+	padding: 2rem;
+
+	width: 19rem;
+	height: 25rem;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+	color: #EBA055;
+	font-size: 4rem;
+}
+
+#jugador,
+#enemigo {
+	color: #D8934F;
+	font-size: 1.2rem;
+}
+

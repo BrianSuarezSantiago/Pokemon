@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Pokémon</title>
+        <link rel="title icon" href="./assets/favicon.ico" type="image/x-icon">    <!--Add image to title bar-->
+        <script type="text/javascript" src="./js/script.js"></script>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+        <h1 id="game-title">ポケットモンスター</h1>
+
+        <section id="select-pet">
+            <h2 id="pet-heading">Select pet</h2>
+
+            <div class="pets-cards">
+                <label class="card" for="pikachu">
+                    <p>Pikachu</p>
+                    <img src="./assets/pikachu.png" alt="pikachu">
+                </label>
+                <input type="radio" id="pikachu" name="pets">
+
+                <label class="card" for="charmander">
+                    <p>Charmander</p>
+                    <img src="./assets/charmander.png" alt="charmander">
+                </label>
+                <input type="radio" id="charmander" name="pets">
+
+                <label class="card" for="charizard">
+                    <p>Charizard</p>
+                    <img src="./assets/charizard.png" alt="charizard">
+                </label>
+                <input type="radio" id="charizard" name="pets">
+            </div>
+
+            <button type="button" id="select">Select pet! 🤘🏻</button>
+        </section>
+
+        <section id="select-attack">
+            <h2 id="attack-heading">Select attack</h2>
+
+            <p>You select <span id="player-pet-name"></span> as a pet and it has <span id="player-pet-lives"></span> lives.</p>
+            <p>Your enemy select <span id="enemy-pet-name"></span> as a pet and it has <span id="enemy-pet-lives"></span> lives.</p>
+
+
+            <button type="button" id="fire-attack"> Fire!</button>
+            <button type="button" id="water-attack"> Water!</button>
+            <button type="button" id="land-attack"> Land!</button>
+        </section>
+
+        <section id="game-messages"></section>    <!--Dynamic game messages-->
+
+        <section id="reset-game">
+            <button type="button" id="reset">Reset Game! ⚙️</button>
+        </section>
+    </body>
+</html>
